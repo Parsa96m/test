@@ -11,6 +11,7 @@ using Infrastucture.Repositories;
 
 namespace cleanshop1.Controllers
 {
+[Authorize(Roles ="Admin")]
     public class ManageRoleController : Controller
     {
         private RoleManager<Role> _roleManager;
